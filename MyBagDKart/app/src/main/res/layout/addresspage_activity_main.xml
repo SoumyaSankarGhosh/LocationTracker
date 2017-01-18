@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kiit.mybagdkart.MainActivity">
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView_inputSearchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="     Start typing a location..."
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#e3e4e3">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_weight="1"
+               android:textSize="20dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="  Auto-detect My Location"
+               android:layout_marginBottom="10dp"
+               />
+          <ImageView
+              android:layout_marginTop="5dp"
+              android:layout_weight="0"
+               android:src="@mipmap/loc"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/imageView_btnShowLocation"/>
+       </LinearLayout>
+
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:drawableLeft="@mipmap/flag"
+               android:text="  INDIA"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="1dp"/>
+           <TextView
+               android:padding="10dp"
+               android:id="@+id/textView_myaddress"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+
+               />
+       </LinearLayout>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/card_margin"
+            android:elevation="3dp">
+
+            <ListView
+                android:padding="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView_location"
+                android:background="#ffffff">
+
+            </ListView>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
